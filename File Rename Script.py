@@ -5,7 +5,10 @@ def main():
     print("******* Welcome to File Renamer *******")
     print()
     print("\u2764 \u2764 \u2764 \u2764 \u2764 Created by hk \u2764 \u2764 \u2764 \u2764 \u2764")
+    print()
     path = input("Enter the desired path or paste it. ")
+    print()
+    ty = input("Enter file type ")
     print()
     path = path.replace('\\','/')
     path = path + "/"
@@ -13,7 +16,7 @@ def main():
     print()
     for filename in os.listdir(path):
         
-        dst = name + str(i) + ".jpg"
+        dst = name + str(i) + ty
         src = path + filename
         dst = path + dst
         os.rename(src,dst)
