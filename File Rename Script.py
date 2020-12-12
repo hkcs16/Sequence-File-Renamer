@@ -8,11 +8,12 @@ def main():
     print()
     path = input("Enter the desired path or paste it. ")
     print()
-    ty = input("Enter file type ")
+    ty = input("Enter file type ex- .jpeg .pdf and etc. ")
     print()
     path = path.replace('\\','/')
     path = path + "/"
     name = input("Enter the name of the file that you want to be reflected ")
+    
     print()
     for filename in os.listdir(path):
         
